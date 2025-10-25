@@ -481,3 +481,25 @@ footer{
 		font-size: 65px;
 	}
 }
+
+
+/* Fix contact section responsiveness */
+@media (max-width: 991px) {
+  #contact .row.d-flex {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  #contact .img-contact {
+    flex: 1 1 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  #contact .img-contact a {
+    display: inline-block;
+    margin-left: 6px;
+    word-break: break-word;
+  }
+}
+
