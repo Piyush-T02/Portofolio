@@ -330,7 +330,7 @@
 }
 
 /* Promise section horizontal scroll for mobile */
-@media (max-width: 991px) {
+@media (max-width: 450px) {
 	.promise-title h1 {
 		text-align: center;
 		font-size: 35px;
