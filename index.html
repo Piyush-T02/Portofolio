@@ -17,16 +17,8 @@
     <!--Font Awesome-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <!-- AOS Scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    <!--Font Awasome-->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!--Link ke css-->
     <link rel="stylesheet" href="style.css">
@@ -51,12 +43,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"> 
 
-    <title>Portofolio - Piyush Tiwari</title>
+    <title>Freelance Developer - Piyush</title>
   </head>
   <body>
     
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-item" href="#">P<span class="span">iyush</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,59 +63,124 @@
               <a class="nav-link" href="#about">about</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#project">project</a>
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#process">Process</a>
             </li>
             
           </ul>
           <form class="d-flex">
-            <a href="#contact" class="btn">Contact Me</a>
+            <a href="#contact" class="btn">Hire Me</a>
           </form>
         </div>
       </div>
     </nav>
-    <!-- A Navbar -->
 
-
-
-    <!-- Jumbotron -->
+    <!-- Hero Section -->
     <section id="home">
       <div class="jumbotron jumbotron-fluid">
         <div class="container-fluid text">
-          <h2 class="display-4">about & contact</h2>
           <h1 class="h1">Hi, I’m <span class="span Piyush typed-text"></span><span class="cursor">&nbsp;</span></h1>
-          <h3 class="lead">Web Developer</h3>
+          <h3 class="lead hero-description">a Full-Stack Developer specializing in creating custom web applications, e-commerce solutions, and modern websites that drive results.</h3>
+          <!-- CTA Buttons -->
+          <div class="hero-cta-buttons">
+            <a href="#contact" class="btn btn-primary-cta">Hire Me</a>
+            <a href="https://calendar.app.google/BSyfPrjLgwuonvK89" class="btn btn-tertiary-cta" target="_blank">Talk to Me</a>
+          </div>
           <!-- Social Media -->
               <div class="sosial-media">
                 <!-- Instagram -->
                   <a href="https://www.instagram.com/piyush_tiwari02/?hl=en" target="blank"><i class="fab fa-instagram fa-2x"></i></a>
                 <!-- Github -->
                   <a href="https://github.com/Piyush-T02" target="blank"><i class="fab fa-github fa-2x"></i></a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/piyush-tiwari-freelencer-web-developer" target="blank"><i class="fab fa-linkedin fa-2x"></i></a>
               </div>
         </div>
       </div>
     </section>
-    <!-- A Jumbotron -->
 
-    <!-- About -->
+    <!-- About / Story Section -->
     <section id="about">
       <div class="container-fluid">
         <div class="row d-flex">
-          <div class="col-lg-6 col-md-12 d-flex">
+          <div class="col-lg-8 col-md-12 d-flex">
             <div class="text-capitalize text-about">
-              <h1>About <span>Me</span></h1>
-              <p>I’m Piyush Tiwari who is 21 y.o. I'm from Gujarat (INDIA), I'm interested to be a Fullstack developer. I'm currently working as a Fullstack developer, probably the career and my experience of my future</p>
+              <h1>My <span>Story</span></h1>
+              <p class="about-bio">I'm Piyush Tiwari, a 21-year-old Full-Stack Developer from Gujarat, India. My journey into web development started with a passion for solving problems and creating digital solutions that make a real impact.</p>
+              <p class="about-bio">When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or working on side projects that challenge me. I value clear communication, reliable delivery, and building long-term relationships with my clients.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- A About -->
+    <!-- A About / Story Section -->
 
-    <!-- Selected Project -->
+    <!-- Skills / Tools Section -->
+    <section id="skills">
+      <div class="container-fluid">
+        <div class="title-skills">
+          <h1>Skills & <span>Tools</span></h1>
+          <p class="skills-subtitle">Technologies I use to build modern, scalable web applications</p>
+        </div>
+        <div class="row skills-categories">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="skills-category-card">
+              <h3><i class="fas fa-paint-brush"></i> Frontend</h3>
+              <div class="skills-list">
+                <span class="skill-item">React</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">HTML5</span>
+                <span class="skill-item">CSS3</span>
+                <span class="skill-item">Bootstrap</span>
+                <span class="skill-item">Tailwind CSS</span>
+                <span class="skill-item">VUE.JS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="skills-category-card">
+              <h3><i class="fas fa-server"></i> Backend</h3>
+              <div class="skills-list">
+                <span class="skill-item">Node.js</span>
+                <span class="skill-item">Express</span>
+                <span class="skill-item">REST APIs</span>
+                <span class="skill-item">Authentication</span>
+                <span class="skill-item">JWT</span>
+                <span class="skill-item">PHP</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="skills-category-card">
+              <h3><i class="fas fa-database"></i> Database & Tools</h3>
+              <div class="skills-list">
+                <span class="skill-item">MongoDB</span>
+                <span class="skill-item">Git</span>
+                <span class="skill-item">GitHub</span>
+                <span class="skill-item">Vercel</span>
+                <span class="skill-item">Postman</span>
+                <span class="skill-item">MySQL</span>
+                <span class="skill-item">Firebase</span>
+                <span class="skill-item">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- A Skills / Tools Section -->
+
+    <!-- Portfolio / Projects Section -->
   <section id="project">
     <div class="container-fluid">
       <div class="title-project">
-        <h1 class="project-isi">My <span>Project</span></h1>
+        <h1 class="project-isi">My <span>Work</span></h1>
+        <p class="project-subtitle">Real projects, real results for real businesses</p>
       </div>
     </div>
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -138,16 +195,10 @@
           <a href="https://piyush-t02.github.io/Gagan_Dekho/" target="blank"><img src="img/web5.png" class="d-block w-85 img-fluid" alt="Gagan Dekho"></a>
         </div>
         <div class="carousel-item justify-content-center d-flex">
-          <a href="https://ecommerce-main-rho.vercel.app/" target="blank"><img src="img/belaxcy.png" class="d-block w-85 img-fluid" alt="Ecommerce Website"></a>
-        </div>
-        <!--<div class="carousel-item justify-content-center d-flex">
-          <a href="https://dribbble.com/shots/16250626-Vencvel-Makes-it-Easy-for-you-to-Travel" target="blank" ><img src="img/vencvel.png" class="d-block w-85 img-fluid" alt="Vencvel"></a>
+          <a href="https://ecommerce-main-rho.vercel.app/" target="_blank"><img src="img/belaxcy.png" class="d-block w-85 img-fluid" alt="Ecommerce Website"></a>
         </div>
         <div class="carousel-item justify-content-center d-flex">
-          <a href="https://dribbble.com/shots/16408144-Management-Project-Task-UI-Design-by-Piyush" target="blank" ><img src="img/mobile3.png" class="d-block w-85 img-fluid" alt="Management-Project-Task-UI-Design-by-Piyush"></a>
-        </div> -->
-        <div class="carousel-item justify-content-center d-flex">
-          <a href="https://allevents.in/pages/events-api" target="blank" ><img src="img/web4.png" class="d-block w-85 img-fluid" alt="Developer's API Page for Allevents"></a>
+          <a href="https://allevents.in/pages/events-api" target="_blank"><img src="img/web4.png" class="d-block w-85 img-fluid" alt="Developer's API Page for Allevents"></a>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -160,9 +211,6 @@
       </button>
     </div>
   </section>
-    <!-- A Selected Project -->
-
-
 
     <!-- Promise -->
     <section id="promise">
@@ -206,102 +254,243 @@
         </div>
       </div>
     </section>
-    <!-- A Promise -->
 
-   
-    <!-- Contact -->
-    <section id="contact" style=>
+    <!-- Process / How I Work Section -->
+    <section id="process">
+      <div class="container-fluid">
+        <div class="process-title">
+          <h1>How I <span>Work</span></h1>
+          <p class="process-subtitle">A structured approach to delivering your project on time and within budget</p>
+        </div>
+        <div class="row process-steps">
+          <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <h4>Discovery</h4>
+              <p>We discuss your goals, target audience, and requirements to understand your vision.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <h4>Planning</h4>
+              <p>I create a detailed project plan, timeline, and milestones for your approval.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <h4>Design</h4>
+              <p>Wireframes and mockups are created to visualize the final product before development.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <h4>Development</h4>
+              <p>I build your project using best practices, with regular updates and feedback loops.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+            <div class="process-step">
+              <div class="step-number">5</div>
+              <h4>Launch</h4>
+              <p>Thorough testing and deployment to ensure everything works perfectly.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+            <div class="process-step">
+              <div class="step-number">6</div>
+              <h4>Support</h4>
+              <p>Ongoing maintenance and support to keep your website running smoothly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
         <div class="container">
             <div class="row text-center mb-5">
                 <div class="contact-title">
-                  <h1>Contact <span>Me</span></h1>
+                  <h1>Let's <span>Talk Business</span></h1>
+                  <p class="contact-subtitle">Ready to grow your business online? Get in touch and let's discuss your project.</p>
                 </div>
             </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-5 justify-content-center d-flex img-contact">
-                    Let's Catch Up on Mail id :  
-                    <a href="mailto:contact.piyush02@gmail.com">contact.piyush02@gmail.com</a>
+            
+            <!-- Contact Form -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8">
+                    <form name="contact-my-website" id="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-submit btn-kirim">Send Message</button>
+                            <button type="button" class="btn btn-submit btn-loading d-none" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...
+                            </button>
+                        </div>
+                        <div class="alert alert-success my-alert d-none mt-3" role="alert">
+                            Thank you! Your message has been sent. I'll get back to you soon.
+                        </div>
+                    </form>
                 </div>
-                <div class="col-lg-5 justify-content-center d-flex img-contact">
-                    <a href="https://www.linkedin.com/in/piyush-tiwari-freelencer-web-developer" target="_blank">LinkedIn Profile</a>
+            </div>
+
+            <!-- Contact Options -->
+            <div class="row contact-options">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="mailto:contact.piyush02@gmail.com" class="contact-option-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5>Gmail</h5>
+                        <span class="contact-link-text">Mail me</span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="https://calendar.app.google/BSyfPrjLgwuonvK89" target="_blank" class="contact-option-card">
+                        <div class="contact-icon gmeet">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h5>Google Meet</h5>
+                        <span class="contact-link-text">Schedule a Call</span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="https://www.linkedin.com/in/piyush-tiwari-freelencer-web-developer" target="_blank" class="contact-option-card">
+                        <div class="contact-icon linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h5>LinkedIn</h5>
+                        <span class="contact-link-text">Connect with me</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="row text-center mt-5">
+                <div class="col-12">
+                    <h3 class="cta-heading">Ready to Get Started?</h3>
+                    <p class="cta-text">Let's discuss how I can help grow your business</p>
+                    <div class="cta-buttons">
+                        <a href="https://calendar.app.google/BSyfPrjLgwuonvK89" class="btn btn-gmeet" target="_blank">
+                            <i class="fas fa-video"></i> Schedule Google Meet
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- A Contact -->
 
     <!-- Footer -->
-    <footer class="text-center text-lg-start d-flex justify-content-between">
-      <!-- Copyright -->
-      <div class="text-center p-3 footer">
-        <a class="text-dark fs-6">@2025 Copyright</a>
+    <footer class="text-center text-lg-start">
+      <div class="container-fluid">
+        <div class="row footer-content">
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="footer-brand">Piyush</span> Tiwari</h5>
+            <p class="footer-tagline">Full-Stack Developer helping businesses grow online</p>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#project">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <h5 class="footer-heading">Connect With Me</h5>
+            <div class="footer-social">
+              <a href="https://github.com/Piyush-T02" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/piyush-tiwari-freelencer-web-developer" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/piyush_tiwari02/?hl=en" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/918469135696" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center footer-copyright">
+            <p>&copy; 2025 Piyush Tiwari. All rights reserved.</p>
+          </div>
+        </div>
       </div>
-      <!-- Buy Me A Coffee -->
     </footer>
     <!-- A Footer -->
 
 
     <script>
-
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyryaU-KiFb08lpVh-oX93cfQUVIY0eqyBaOvOTH4bNhMmSThbh1AUxTV34DVG1GoQMNQ/exec'
-        const form = document.forms['contact-my-website']
+        const form = document.forms['contact-my-website'];
         const btnKirim = document.querySelector('.btn-kirim');
         const btnLoading = document.querySelector('.btn-loading');
         const btnDAlert = document.querySelector('.my-alert');
 
-        form.addEventListener('submit', e => {
-        e.preventDefault()
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                btnLoading.classList.toggle("d-none");
-                btnKirim.classList.toggle("d-none");
-                btnDAlert.classList.toggle('d-none');
-                form.reset()
-                console.log('Success!', response)})
-            .catch(error => console.error('Error!', error.message))
-        })
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Show loading state
+            btnLoading.classList.remove("d-none");
+            btnKirim.classList.add("d-none");
+            btnDAlert.classList.add('d-none');
+
+            // Get form data
+            const formData = {
+                name: form.name.value,
+                email: form.email.value,
+                message: form.message.value
+            };
+
+            try {
+                // Send to your server endpoint (API key is hidden on server)
+                const response = await fetch('/send-mail', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                const data = await response.json();
+
+                if (response.ok && data.success) {
+                    // Show success message
+                    btnLoading.classList.add("d-none");
+                    btnKirim.classList.remove("d-none");
+                    btnDAlert.classList.remove('d-none');
+                    form.reset();
+                } else {
+                    throw new Error(data.message || 'Failed to send message');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                // Show error message
+                btnLoading.classList.add("d-none");
+                btnKirim.classList.remove("d-none");
+                alert('Sorry, there was an error sending your message. Please try again or email me directly at contact.piyush02@gmail.com');
+            }
+        });
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('ul li a').click(function(){
-                $('li a').removeClass("active");
-                $(this).addClass("active");
+            $('.navbar-nav .nav-link').click(function() {
+                $('.navbar-collapse').collapse('hide');
             });
-        });
-    </script>
-
-    <!-- Script untuk menghilangkan navigasi collapse jika dikilk akan hilang -->
-
-    <script type="text/javascript">    
-        $('.js-scroll-trigger').click(function() {
-            $('.navbar-collapse').collapse('hide');
-        });
-    </script>
-
-    <!-- Akhir -->
-
-    <!-- fungsi script adalah membuat hover card ke atas -->
-    <script>
-        $(document).ready(function(){
-
-            $('.col-md-4').hover(
-                //trigger ketika mouse di sentuh
-                function(){
-                    $(this).animate({
-                        marginTop: "-=1%",
-                    },200);
-                },
-
-                //trigger  when mouse out
-                function(){
-                    $(this).animate({
-                        marginTop: "0%"
-                    },200);
-                }
-            );
         });
     </script>
 
@@ -351,18 +540,6 @@
      </script>
 
 
-     <!-- navbar scroll -->
-     <script>
-      document.addEventListener("scroll", function () {
-        const navbar = document.querySelector("nav");
-
-        if (this.body.scrollTop > 1 || this.documentElement.scrollTop > 1) {
-          navbar.classList.add("nav-scrolled", "fixed-top");
-        } else {
-          navbar.classList.remove("nav-scrolled", "fixed-top");
-        }
-      });
-    </script>   
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
