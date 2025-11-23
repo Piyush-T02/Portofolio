@@ -448,21 +448,21 @@
             btnKirim.classList.add("d-none");
             btnDAlert.classList.add('d-none');
 
-            // Get form data (API key is hidden on backend)
-            const formData = {
-                name: form.name.value,
-                email: form.email.value,
-                message: form.message.value
-            };
+            // Create FormData from the form
+            const formData = new FormData(form);
+            
+            // Add Web3Forms access key
+            // Replace 'YOUR_ACCESS_KEY' with your actual Web3Forms access key
+            formData.append("access_key", "582813a0-50c7-4534-ae5e-1e8f0423e9b4");
+            
+            // Optional: Set recipient email (if you want to override default)
+            // formData.append("to", "contact.piyush02@gmail.com");
 
             try {
-                // Send to backend API (API key is secure on server)
-                const response = await fetch("https://portofolio-sepia-kappa.vercel.app/api/send-mail", {
+                // Send directly to Web3Forms API
+                const response = await fetch("https://api.web3forms.com/submit", {
                     method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(formData)
+                    body: formData
                 });
 
                 const data = await response.json();
