@@ -26,6 +26,23 @@ export default async function handler(req, res) {
             });
         }
 
+        // Check if environment variables are set
+        if (!process.env.WEB3FORMS_ACCESS_KEY) {
+            console.error("WEB3FORMS_ACCESS_KEY is not set");
+            return res.status(500).json({
+                success: false,
+                message: "Server configuration error: Missing API key"
+            });
+        }
+
+        if (!process.env.RECIPIENT_EMAIL) {
+            console.error("RECIPIENT_EMAIL is not set");
+            return res.status(500).json({
+                success: false,
+                message: "Server configuration error: Missing recipient email"
+            });
+        }
+
         // Prepare form data for Web3Forms
         const formData = new URLSearchParams();
         formData.append("access_key", process.env.WEB3FORMS_ACCESS_KEY);
@@ -46,6 +63,7 @@ export default async function handler(req, res) {
         if (response.ok && data.success) {
             return res.status(200).json({ success: true, message: "Email sent successfully!" });
         } else {
+            console.error("Web3Forms API error:", data);
             return res.status(500).json({
                 success: false,
                 message: data.message || "Failed to send email"
@@ -55,7 +73,8 @@ export default async function handler(req, res) {
         console.error("Error sending email:", error);
         return res.status(500).json({
             success: false,
-            message: "Server error. Please try again later."
+            message: "Server error. Please try again later.",
+            error: error.message
         });
     }
 }
