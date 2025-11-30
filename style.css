@@ -874,8 +874,8 @@ footer {
 	}
 
 	.jumbotron {
-		height: 65vh !important;
-		padding-top: 20px;
+		height: 50vh !important;
+		padding-top: 30px;
 	}
 
 	.jumbotron .text {
@@ -899,11 +899,11 @@ footer {
 		gap: 0.5rem;
 	}
 
-	.btn-primary-cta,
+	/* .btn-primary-cta,
 	.btn-tertiary-cta {
 		padding: 14px 22px;
 		font-size: 24px;
-	}
+	} */
 
 	.jumbotron .sosial-media a {
 		width: 40px;
@@ -1028,7 +1028,7 @@ footer {
 	}
 }
 
-@media (min-width: 770px) {
+/* @media (min-width: 770px) {
 	.jumbotron {
 		padding-top: 50px !important;
 	}
@@ -1048,7 +1048,7 @@ footer {
 	.sosial-media {
 		font-size: larger;
 	}
-}
+} */
 
 @media (min-width: 1020px) {
 	.datar-promise {
